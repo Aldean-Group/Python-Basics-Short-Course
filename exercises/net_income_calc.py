@@ -46,6 +46,7 @@ if(gross_income > 100000):
 
 #finding the users taxable income
 taxable_income = gross_income - personal_allowance
+taxable_income = max(taxable_income, 0)
 
 #finding how much the user will pay by summing up the result of the tiered band system
 total_tax = 0
